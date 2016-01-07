@@ -1,0 +1,9 @@
+// Here you may specify variables for the final style.css
+// Grunt task 'build' will first generate minified style.min.css in /assets/css and then it will merge
+// two files - /assets/css/theme.css (style.css header including theme name, etc) and
+// newly created /assets/css/style.min.css with proper paths into the final single /style.css
+
+$fa-font-path:                  "dist/fonts";
+$loading-gif-path:              "dist/img/ajax-loader.gif";
+
+@import "style";

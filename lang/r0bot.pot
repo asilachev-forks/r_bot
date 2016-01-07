@@ -1,0 +1,169 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: *.js\n"
+"X-Poedit-SearchPathExcluded-3: r_bot\n"
+
+#: 404.php:6
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: functions.php:25
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: index.php:7 search.php:7
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: index.php:19
+msgid "Previous"
+msgstr ""
+
+#: index.php:20
+msgid "Next"
+msgstr ""
+
+#: lib/functions.php:16
+msgid "Name"
+msgstr ""
+
+#: lib/functions.php:18
+msgid "Email"
+msgstr ""
+
+#: lib/functions.php:20
+msgid "Website"
+msgstr ""
+
+#: lib/functions.php:70
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: lib/functions.php:70
+msgid "Edit"
+msgstr ""
+
+#: lib/functions.php:76
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: lib/functions.php:142
+msgid "Not Found"
+msgstr ""
+
+#: lib/functions.php:144
+msgid "Recent Posts"
+msgstr ""
+
+#: lib/init.php:38
+msgid "Primary Navigation"
+msgstr ""
+
+#: lib/init.php:50
+msgid "Primary"
+msgstr ""
+
+#: lib/shortcodes.php:52
+msgid "Button Group"
+msgstr ""
+
+#: lib/shortcodes.php:65
+msgid "Button 1 Anchor Text"
+msgstr ""
+
+#: lib/shortcodes.php:71
+msgid "Button 1 URL"
+msgstr ""
+
+#: lib/shortcodes.php:77
+msgid "Button 2 Anchor Text"
+msgstr ""
+
+#: lib/shortcodes.php:83
+msgid "Button 2 URL"
+msgstr ""
+
+#: page.php:9 single.php:27
+msgid "Pages:"
+msgstr ""
+
+#: single.php:8 templates/content.php:21
+msgid "Off"
+msgstr ""
+
+#: single.php:22
+msgid "Share on Vkontakte"
+msgstr ""
+
+#: single.php:23
+msgid "Share on Facebook"
+msgstr ""
+
+#: single.php:24
+msgid "Share on Twitter"
+msgstr ""
+
+#: single.php:25
+msgid "Share on Google Plus"
+msgstr ""
+
+#: templates/comments.php:9
+msgid "Comments"
+msgstr ""
+
+#: templates/comments.php:19
+msgid "&larr; Older comments"
+msgstr ""
+
+#: templates/comments.php:22
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: templates/comments.php:31
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/comments.php:38 templates/comments.php:39
+msgid "Leave a reply"
+msgstr ""
+
+#: templates/comments.php:40
+msgid "Cancel"
+msgstr ""
+
+#: templates/comments.php:41
+msgid "Post Comment"
+msgstr ""
+
+#: templates/content.php:15
+msgid "Continue Reading"
+msgstr ""
+
+#: templates/footer.php:6
+msgid "Top"
+msgstr ""
+
+#: templates/searchform.php:2
+msgid "Search for:"
+msgstr ""
+
+#: templates/searchform.php:4 templates/searchform.php:6
+msgid "Search"
+msgstr ""

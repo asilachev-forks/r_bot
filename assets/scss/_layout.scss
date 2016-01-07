@@ -1,0 +1,95 @@
+.banner {
+  .navbar, .mobile-header {
+    margin-left: auto;
+    margin-right: auto;
+    @include make-container-max-widths();
+    @include media-breakpoint-up(md) {
+      padding-left: $grid-gutter-width;
+      padding-right: $grid-gutter-width;
+      margin: 0 auto;
+    }
+  }
+  .mobile-header {
+    background: white;
+  }
+}
+
+.wrap {
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  @include make-container-max-widths();
+}
+
+.main {
+  background: white;
+  padding: $grid-gutter-width / 2;
+  @include media-breakpoint-up(md) {
+    padding: $grid-gutter-width;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: $grid-gutter-width;
+  }
+}
+
+.content-info {
+  border-top: 1px $gray-lighter solid;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $spacer ($grid-gutter-width / 2);
+  @include make-container-max-widths();
+  @include media-breakpoint-up(md) {
+    background: white;
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+    margin: 0 auto;
+  }
+}
+
+.sidebar-primary {
+
+  .wrap > .page-content {
+    @include media-breakpoint-up(lg) {
+      @include make-row();
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .main {
+    @include media-breakpoint-up(lg) {
+      @include make-col-span(8);
+    }
+  }
+
+  .sidebar {
+    border-left: 1px $gray-lighter solid;
+    padding: ($grid-gutter-width / 2);
+    @include media-breakpoint-up(md) {
+      padding: $grid-gutter-width;
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col-span(4);
+      padding: $grid-gutter-width;
+    }
+  }
+
+}
+
+.scroll-to-top {
+  position: fixed;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+  background: $gray-dark;
+  color: #ffffff;
+  line-height: 2rem;
+  text-align: center;
+  @include hover-focus {
+    color: #ffffff;
+    background: $brand-primary;
+  }
+}

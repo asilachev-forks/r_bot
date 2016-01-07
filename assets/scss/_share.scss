@@ -1,0 +1,170 @@
+/**
+ * Social likes base styles
+ */
+
+.social-likes {
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.social-likes__widget {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.social-likes__button {
+  display: inline-block;
+}
+
+.social-likes__icon {
+  display: inline-block;
+}
+
+.social-likes__counter {
+  display: inline-block;
+}
+
+.social-likes__counter_empty {
+  display: none;
+}
+
+/**
+ * Icons
+ */
+
+.social-likes__icon {
+  font-family: 'FontAwesome';
+}
+
+.social-likes__icon_facebook {
+  &:before {
+   content: "\f09a";
+  }
+}
+
+.social-likes__icon_vkontakte {
+  &:before {
+   content: "\f189";
+  }
+}
+
+.social-likes__icon_twitter {
+  &:before {
+   content: "\f099";
+  }
+}
+
+.social-likes__icon_plusone {
+  &:before {
+   content: "\f0d5";
+  }
+}
+
+/**
+ * Social likes theme
+ *
+ *  .social-likes
+ *    ul.social-likes.social-likes_visible
+ *      li.social-likes__widget.social-likes__widget_vkontakte
+ *        span.social-likes__button.social-likes__button_vkontakte
+ *          span.social-likes__icon.social-likes__icon_vkontakte
+ *        span.social-likes__counter.social-likes__counter_vkontakte.social-likes__counter_empty
+ */
+
+
+.social-likes__widget {
+  margin: .25rem .25rem;
+}
+
+.social-likes__button {
+  font-size: .8rem;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  background: $brand-primary;
+  color: white;
+}
+
+.social-likes__icon {
+
+}
+
+.social-likes__counter {
+  margin-left: .4rem;
+  position: relative;
+  border: darken($gray-lighter,10%) 1px solid;
+  padding: .4rem;
+  line-height: 1;
+  min-width: 1.75rem;
+  text-align: center;
+  font-size: .7rem;
+  background: white;
+  color: $gray;
+  &:after, &:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-right-color: white;
+    border-width: 5px;
+    margin-top: -5px;
+  }
+  &:before {
+    border-right-color: #CCC;
+    border-width: 6px;
+    margin-top: -6px;
+  }
+}
+
+/**
+ * Buttons
+ */
+
+.social-likes__widget_facebook {
+  .social-likes__button {
+    background: $facebook;
+    color: white;
+  }
+  &:hover .social-likes__button {
+    background: darken($facebook, 15%);
+  }
+}
+
+.social-likes__widget_vkontakte {
+  .social-likes__button {
+    background: $vkontakte;
+    color: white;
+  }
+  &:hover .social-likes__button {
+    background: darken($vkontakte, 15%);
+  }
+}
+
+.social-likes__widget_twitter {
+  .social-likes__button {
+    background: $twitter;
+    color: white;
+  }
+  &:hover .social-likes__button {
+    background: darken($twitter, 15%);
+  }
+}
+
+.social-likes__widget_plusone {
+  .social-likes__button {
+    background: $google-plus;
+    color: white;
+  }
+  &:hover .social-likes__button {
+    background: darken($google-plus, 15%);
+  }
+}

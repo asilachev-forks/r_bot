@@ -1,0 +1,139 @@
+section.comments {
+  margin-top: 2rem;
+  padding-top: 3rem;
+  border-top: 1px $gray-lighter solid;
+  .logged-in-as {
+
+  }
+}
+
+.comments .comment-respond:first-child{
+  margin-top: 0;
+}
+
+.comments .comment-respond:last-child {
+  margin-bottom: 0;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 3rem 0 3rem;
+  padding: 0;
+  .children {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0 0 3.75rem;
+  }
+  li {
+    margin: 3rem 0;
+    padding: 0;
+  }
+  li li {
+    position: relative;
+  }
+  & > li + li {
+    margin-top: 1.5rem;
+    padding-top: 3rem;
+    border-top: 1px $gray-lighter solid;
+  }
+  .pingback .comment-thumb {
+    display: none;
+  }
+  .comment-body {
+    @extend .media;
+    .comment-thumb {
+      @extend .media-left;
+      padding-right: 1.5rem;
+      img {
+        max-width: none;
+        @extend .media-object;
+      }
+    }
+    .comment-content {
+      @extend .media-body;
+
+      .comment-author-container {
+        @extend .clearfix;
+
+        .comment-author {
+          float: left;
+          color: $gray-light;
+          a {
+            color: black;
+            @include hover-focus {
+              color: $brand-primary;
+            }
+          }
+        }
+
+        .reply {
+          float: right;
+        }
+      }
+
+      .comment-meta {
+
+        font-size: $font-size-xs;
+        text-transform: uppercase;
+        color: $gray-light;
+
+        .comment-edit-link {
+          margin-left: $spacer;
+        }
+      }
+
+      .alert {
+        margin-top: 1rem;
+      }
+
+      .comment-text {
+        margin-top: 1rem;
+        p {
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+}
+
+.comment-reply-title {
+  @extend .title-block;
+  margin-bottom: .5rem;
+  small {
+    margin-left: 1rem;
+    float: right;
+  }
+}
+
+.comment-reply-link,
+.comment-reply-title > small > a {
+  font-size: $font-size-xs;
+  color: $gray;
+  line-height: 1;
+  text-transform: uppercase;
+  border-bottom: 2px $gray-lighter solid;
+  letter-spacing: 1px!important;
+  @include hover-focus {
+    color: $brand-primary;
+    border-bottom-color: $brand-primary;
+  }
+}
+
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  width: 32%;
+  float: left;
+}
+.comment-form-email,
+.comment-form-url {
+  margin-left: 2%;
+}
+
+.comment-respond {
+  margin: 3rem 0;
+  .form-submit {
+    margin-bottom: 0;
+  }
+}

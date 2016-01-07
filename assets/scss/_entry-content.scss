@@ -1,0 +1,135 @@
+.content {
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a:not(.btn) {
+    border-bottom: 2px $gray-lighter solid;
+    @include hover-focus {
+      border-bottom-color: $brand-primary;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, p, ol, ul, img, blockquote, form, figure {
+    margin-top: $text-gutter;
+    margin-bottom: $text-gutter;
+  }
+  ul, ol {
+    margin: ($text-gutter * 1.5) 2rem;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+    li {
+      &:before {
+        content: "";
+        display: inline-block;
+        margin-right: 1rem;
+        width: 5px;
+        height: 5px;
+        vertical-align: middle;
+        background: $brand-primary;
+      }
+    }
+  }
+  ul li + li, ol li + li{
+    margin-top: $text-gutter / 2;
+  }
+  ul ul, ol ol, ul ol, ol ul {
+    margin: ($text-gutter / 2) 0;
+  }
+  blockquote {
+    background: $gray-lighter;
+    padding: 2rem 2rem 2rem 4rem;
+    margin: ($text-gutter * 1.5) 0;
+    @include media-breakpoint-up(md) {
+      padding: 3rem 4rem 3rem 8rem;
+    }
+    &:before {
+      content: '\f27b';
+      font-family: 'FontAwesome';
+      font-size: 2rem;
+      margin-left: -3rem;
+      color: darken($gray-lighter, 20%);
+      line-height: 1;
+      position: absolute;
+      opacity: 0.7;
+    }
+    cite {
+      display: block;
+      text-align: right;
+      font-size: $font-size-sm;
+      font-style: italic;
+      color: $gray;
+      margin-top: .5rem;
+      &:before {
+        content: '\2014';
+        margin-right: .5rem;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    p + p {
+      margin-top: $text-gutter;
+    }
+    & > *:first-child {
+      margin-top: 0;
+    }
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .alignleft {
+    float: left;
+    margin-right: ($text-gutter * 1.5);
+    margin-bottom: $text-gutter;
+  }
+  .alignright {
+    float: right;
+    margin-left: ($text-gutter * 1.5);
+    margin-bottom: $text-gutter;
+  }
+  .aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .wp-caption-text {
+    text-align: center;
+    font-size: .8rem;
+    color: $gray;
+  }
+  .wp-caption {
+    img {
+      margin-bottom: ($text-gutter / 2.5);
+    }
+    .wp-caption-text {
+      padding-bottom: ($text-gutter / 2.5);
+      border-bottom: 1px $gray-lighter solid;
+    }
+  }
+  figure {
+    max-width: 100%;
+    height: auto;
+  }
+  .table-responsive {
+    margin-bottom: $text-gutter;
+    table {
+      margin-bottom: 0;
+    }
+  }
+  .easy-table {
+    @extend .table, .table-sm, .table-hover;
+  }
+  .btn-group {
+    padding: 1rem;
+    text-align: center;
+    background: $gray-lighter;
+    a {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "r_bot",
+  "version": "1.0.0",
+  "homepage": "http://r0bot.ru/",
+  "authors": [
+    "r0bot <r0bot4749@r0bot.ru>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0.0",
+    "jquery": "~1.11.3",
+    "social-likes": "~3.0.15",
+    "font-awesome": "~4.5.0",
+    "sticky-kit": "~1.1.2"
+  }
+}

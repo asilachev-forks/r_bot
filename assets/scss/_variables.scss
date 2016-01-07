@@ -1,0 +1,68 @@
+/*
+ * Bootstrap overrides
+ */
+
+// Colors
+
+$brand-primary:                 #3774DA;
+$body-bg:                       #f2f2f2!default;
+$brand-lighter:                 #f6f6ee;
+$brand-dark:                    #35455B;
+
+// Fonts
+
+$font-family-sans-serif:        "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:             Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:         Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:              $font-family-sans-serif;
+$headings-font-family:          $font-family-sans-serif;
+$headings-font-weight:          300;
+
+$font-size-root:                15px;
+
+$font-size-h1:                  1.75rem;
+$font-size-h2:                  1.5rem;
+$font-size-h3:                  1.25rem;
+$font-size-h4:                  1.15rem;
+$font-size-h5:                  1rem;
+$font-size-h6:                  .85rem;
+
+$text-gutter:                   1.5rem;
+
+// Links
+
+$link-hover-decoration:         none;
+
+// Misc
+
+$enable-rounded:                false;
+$enable-flex:                   true;
+
+/*
+ * Vendor variables
+ */
+
+// Paths
+
+$fa-font-path:                  "../../dist/fonts" !default;
+
+/*
+ * r_bot variables
+ */
+
+// Social colors
+
+$facebook:                      #3b5998;
+$twitter:                       #00aced;
+$vkontakte:                     #45668e;
+$youtube:                       #bb0000;
+$google-plus:                   #dd4b39;
+$odnoklassniki:                 #f2720c;
+$yandex:                        #ec1c24;
+$mailru:                        #ffa930;
+$instagram:                     #675144;
+$tumblr:                        #32506d;
+$pinterest:                     #cb2027;
+$bloglovin:                     #000000;
+$rss:                           #000000;
+

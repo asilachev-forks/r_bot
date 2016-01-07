@@ -1,0 +1,11 @@
+$fa-font-path:                  "../../dist/fonts";
+$body-bg:                       #ffffff;
+
+@import "_bootstrap";
+@import "_type";
+@import "_entry-content";
+
+.mce-content-body {
+  margin-left: 10px;
+  max-width: 750px;
+}
