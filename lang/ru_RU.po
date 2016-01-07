@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-01-07 23:43+0300\n"
+"POT-Creation-Date: 2016-01-08 00:37+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -160,9 +160,9 @@ msgstr "Отправить комментарий"
 msgid "Continue Reading"
 msgstr "Подробнее"
 
-#: templates/footer.php:6
-msgid "Top"
-msgstr "Наверх"
+#: templates/footer.php:7
+msgid "Wordpress Theme by"
+msgstr "Тема Wordpress от"
 
 #: templates/searchform.php:2
 msgid "Search for:"
@@ -171,6 +171,9 @@ msgstr "Поиск по сайту"
 #: templates/searchform.php:4 templates/searchform.php:6
 msgid "Search"
 msgstr "Поиск"
+
+#~ msgid "Top"
+#~ msgstr "Наверх"
 
 #~ msgctxt "yearly archives date format"
 #~ msgid "Y"
