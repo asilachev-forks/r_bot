@@ -16,7 +16,6 @@
     "bootstrap": "~4.0.0",
     "jquery": "~1.11.3",
     "social-likes": "~3.0.15",
-    "font-awesome": "~4.5.0",
-    "sticky-kit": "~1.1.2"
+    "font-awesome": "~4.5.0"
   }
 }

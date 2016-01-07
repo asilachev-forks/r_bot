@@ -1,3 +1,1 @@
-<div class="sticky">
-  <?php dynamic_sidebar('sidebar-primary'); ?>
-</div>
+<?php dynamic_sidebar('sidebar-primary'); ?>

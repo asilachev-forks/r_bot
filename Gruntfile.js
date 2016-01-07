@@ -18,7 +18,6 @@ module.exports = function(grunt) {
     // 'assets/vendor/bootstrap/js/dist/tooltip.js',
     'assets/vendor/bootstrap/js/dist/util.js',
     'assets/vendor/social-likes/src/social-likes.js',
-    'assets/vendor/sticky-kit/jquery.sticky-kit.min.js',
     'assets/js/_*.js'
   ];
 

@@ -20,16 +20,6 @@
   });
 
   /*
-   * Sticky Sidebar
-   */
-
-  $('.sticky').stick_in_parent({
-    'parent': $('.sidebar'),
-    'recalc_every': 1,
-    'offset_top':  30,
-  });
-
-  /*
    * Scroll To Top
    */
 

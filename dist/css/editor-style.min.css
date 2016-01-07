@@ -937,6 +937,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .navbar-brand { padding: 0.75rem 1rem; line-height: 1.2rem; color: white; display: inline-block; }
 @media (min-width: 768px) { .navbar-brand { padding: 0; font-size: 1.75rem; color: #373a3c; } }
 
+.mobile-header { background: white; }
 .mobile-header .logo { padding: 2rem 0; }
 .mobile-header .logo p { font-size: 0.875rem; color: #818a91; margin-bottom: 0; }
 @media (max-width: 767px) { .mobile-header { background: #373a3c; border-bottom: 1px #4f5457 solid; }
