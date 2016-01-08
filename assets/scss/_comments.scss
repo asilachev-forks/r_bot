@@ -22,7 +22,10 @@ section.comments {
   .children {
     list-style: none;
     padding: 0;
-    margin: 3rem 0 0 3.75rem;
+    margin-top: 3rem;
+    @include media-breakpoint-up(md) {
+      margin-left: 3.75rem;
+    }
   }
   li {
     margin: 3rem 0;
