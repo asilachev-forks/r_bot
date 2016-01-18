@@ -1254,7 +1254,7 @@ body { font-weight: 300; }
 
 .title-block, .page-header h1 { text-transform: uppercase; font-size: 13px; color: #818a91; letter-spacing: .15rem; font-weight: 300; margin-bottom: 1.5rem; }
 
-.page-header { margin-bottom: 3rem; }
+.page-header { margin-bottom: 1.5rem; }
 
 table th { font-weight: 700; border-top: none !important; color: #373a3c; padding-top: .5rem !important; padding-bottom: .5rem !important; }
 table tr:first-child td { border-top: none !important; }
