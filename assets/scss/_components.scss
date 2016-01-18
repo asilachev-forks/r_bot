@@ -68,50 +68,49 @@
 
 .content {
   .entry-header {
-    padding: 1rem;
-    background: $brand-lighter;
     text-align: center;
-    @include media-breakpoint-up(md) {
-      padding: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    h1 {
+      margin-top: 0;
     }
     .entry-meta {
       margin-bottom: 0;
-      &:before {
-        content: '';
-        width: 4rem;
-        border-top: 2px darken($brand-lighter, 10%) solid;
-        margin: 1rem auto;
-        display: block;
-      }
     }
   }
   .entry-footer {
-    background: $brand-lighter;
-    padding: 2rem;
+    margin: 2rem 0;
+    padding-top: 2rem;
+    border-top: 1px $gray-lighter solid;
     text-align: center;
+    @extend .clearfix;
+    .entry-meta {
+      line-height: 2.5rem;
+    }
   }
 }
 
+.related-posts {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px $gray-lighter solid;
+}
 
 .posts {
   article {
     @extend .clearfix;
-    margin-top: 3rem;
   }
-  article + article {
-    border-top: 1px $brand-lighter solid;
-    padding-top: 3rem;
-  }
-  .more-wrap {
-    margin-top: .5rem;
-    @extend .pull-sm-right;
+  .row + .row {
+    article {
+      padding-top: 3rem;
+      margin-top: 3rem;
+      border-top: 1px $gray-lighter solid;
+    }
   }
 }
 
 .navigation.pagination {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px $gray-lighter solid;
+  margin-top: 3rem;
   display: block;
   text-align: center;
   .nav-links > * {

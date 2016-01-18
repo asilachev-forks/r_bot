@@ -33,7 +33,11 @@
   @include media-breakpoint-up(md) {
     padding: 0;
     font-size: $font-size-h1;
+    font-weight: $headings-font-weight;
     color: $gray-dark;
+    @include hover-focus {
+      color: $brand-primary;
+    }
   }
 }
 
@@ -43,11 +47,16 @@
   @extend .clearfix;
   background: white;
   .logo {
-    padding: 2rem 0;
+    padding: 2rem 0 1rem;
     p {
-      font-size: $font-size-sm;
       color: $gray-light;
       margin-bottom: 0;
+      margin-top: 1rem;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .logo {
+      text-align: center;
     }
   }
   @include media-breakpoint-down(sm) {
@@ -77,6 +86,7 @@
   &-sm {
     @include media-breakpoint-up(md) {
       display: block !important;
+      height: auto !important;
     }
   }
   &-md {
@@ -98,10 +108,15 @@
 
 .navbar-nav {
 
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
+
   // first level
   & > li.menu-item {
     @include media-breakpoint-up(md) {
-      float: left;
+      float: none;
+      display: inline-block;
       //second level
       &:hover > .sub-menu {
         left: 0;
@@ -134,6 +149,7 @@
 
   // all levels
   li.menu-item {
+    text-align: left;
     & > a {
       display: block;
       @include media-breakpoint-up(md) {
@@ -189,8 +205,7 @@
     padding-top: .75rem;
     padding-bottom: .75rem;
     @include media-breakpoint-up(md) {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding: 1.5rem 1rem;
     }
   }
 
@@ -198,8 +213,8 @@
   & > li.menu-item li.menu-item {
     & > a {
       font-size: $font-size-sm;
-      padding-top: .75rem;
-      padding-bottom: .75rem;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
       @include media-breakpoint-up(md) {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
@@ -212,29 +227,34 @@
 
 .navbar {
 
-  background: $gray-dark;
+  background: white;
+  border-bottom: 1px $gray-lighter solid;
 
   //all levels
   a {
-    color: $gray-light;
+    color: black;
   }
-  a:hover,
-  a:focus,
+  .menu-item:hover > a,
+  .menu-item:focus > a,
   .current-menu-item > a,
   .current-menu-ancestor > a {
-    color: $gray-lighter;
+    color: $brand-primary;
   }
 
   // first level
   .navbar-nav > li.menu-item {
     & > a {
-      color: $gray-light;
+      color: $gray-dark;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: $font-size-sm;
+      letter-spacing: .15rem;
       @include media-breakpoint-up(md) {
         padding-left: 0;
         padding-right: 0;
       }
       @include hover-focus {
-        color: white;
+        color: $brand-primary;
       }
     }
     @include media-breakpoint-up(md) {
@@ -244,12 +264,11 @@
     }
   }
   .navbar-nav > li.current-menu-item,
-  .navbar-nav > li.current-menu-ancestor {
+  .navbar-nav > li.current-menu-ancestor,
+  .navbar-nav > li.current-menu-parent {
     & > a {
-      color: $gray-lighter;
-      @include hover-focus {
-        color: white;
-      }
+      color: $brand-primary;
+      border-bottom-color: $brand-primary;
     }
   }
 
@@ -259,7 +278,7 @@
     @include media-breakpoint-up(md) {
       border: 1px $gray-lighter solid;
       background: white;
-      li.menu-item {
+      .menu-item {
         & + li.menu-item {
           border-top: 1px solid $gray-lighter;
         }
@@ -267,8 +286,8 @@
       a {
         color: $gray-dark;
       }
-      a:hover,
-      a:focus,
+      .menu-item:hover > a,
+      .menu-item:hover > a,
       .current-menu-item > a,
       .current-menu-ancestor > a {
         color: #000000;

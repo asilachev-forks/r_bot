@@ -6,26 +6,27 @@ body {
   text-transform: uppercase;
   font-size: 13px;
   color: $gray-light;
-  letter-spacing: 3px;
+  letter-spacing: .15rem;
   font-weight: 300;
+  margin-bottom: 1.5rem;
 }
 
 .page-header {
+  margin-bottom: 3rem;
   h1 {
     @extend .title-block;
   }
-  padding-bottom: $spacer;
-  border-bottom: 1px $gray-lighter solid;
-  margin-bottom: $spacer * 2;
 }
 
 table {
   th {
-    @extend .title-block;
-    font-weight: 300;
-    background: $gray-lighter;
+    font-weight: 700;
+    border-top: none !important;
     color: $gray-dark;
     padding-top: .5rem !important;
     padding-bottom: .5rem !important;
+  }
+  tr:first-child td {
+    border-top: none !important;
   }
 }

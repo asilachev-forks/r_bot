@@ -17,20 +17,37 @@
     margin-bottom: $text-gutter;
   }
   ul, ol {
-    margin: ($text-gutter * 1.5) 2rem;
+    margin: ($text-gutter * 1.5) 0 ($text-gutter * 1.5) 4rem;
     padding: 0;
   }
   ul {
     list-style: none;
     li {
+      position: relative;
       &:before {
         content: "";
-        display: inline-block;
-        margin-right: 1rem;
+        display: block;
         width: 5px;
         height: 5px;
         vertical-align: middle;
         background: $brand-primary;
+        position: absolute;
+        top: .6rem;
+        left: -1.5rem;
+      }
+    }
+    &.todo {
+      li:before {
+        content: '\f096';
+        font-family: 'FontAwesome';
+        height: auto;
+        width: auto;
+        background: transparent;
+        top: .1rem;
+      }
+      li.done:before {
+        content: '\f046';
+        color: $brand-success;
       }
     }
   }
@@ -114,6 +131,9 @@
   figure {
     max-width: 100%;
     height: auto;
+    img {
+      margin: 0;
+    }
   }
   .table-responsive {
     margin-bottom: $text-gutter;
@@ -122,12 +142,13 @@
     }
   }
   .easy-table {
-    @extend .table, .table-sm, .table-hover;
+    @extend .table, .table-sm, .table-striped, .table-hover;
   }
   .btn-group {
-    padding: 1rem;
-    text-align: center;
+    margin: $text-gutter 0;
+    padding: 2rem 1rem;
     background: $gray-lighter;
+    text-align: center;
     a {
       display: inline-block;
     }

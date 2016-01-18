@@ -131,8 +131,7 @@ function r_bot_display_sidebar() {
      * Any of these page templates that return true won't show the sidebar
      */
     array(
-      'template-fullwidth.php',
-      'template-projects.php',
+      'template-fullwidth.php'
     )
   );
 

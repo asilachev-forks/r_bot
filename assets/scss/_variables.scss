@@ -6,8 +6,9 @@
 
 $brand-primary:                 #3774DA;
 $body-bg:                       #f2f2f2!default;
-$brand-lighter:                 #f6f6ee;
 $brand-dark:                    #35455B;
+$gray-lightest:                 #f8f8f8;
+
 
 // Fonts
 
@@ -16,11 +17,11 @@ $font-family-serif:             Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:         Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:              $font-family-sans-serif;
 $headings-font-family:          $font-family-sans-serif;
-$headings-font-weight:          300;
+$headings-font-weight:          400;
 
 $font-size-root:                15px;
 
-$font-size-h1:                  1.75rem;
+$font-size-h1:                  2rem;
 $font-size-h2:                  1.5rem;
 $font-size-h3:                  1.25rem;
 $font-size-h4:                  1.15rem;
@@ -36,7 +37,6 @@ $link-hover-decoration:         none;
 // Misc
 
 $enable-rounded:                false;
-$enable-flex:                   true;
 
 /*
  * Vendor variables

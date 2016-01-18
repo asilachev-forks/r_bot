@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-01-08 00:37+0300\n"
+"POT-Creation-Date: 2016-01-18 13:00+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -35,11 +35,11 @@ msgstr "%s для включения не найдено"
 msgid "Sorry, no results were found."
 msgstr "Извините, ничего не найдено."
 
-#: index.php:19
+#: index.php:36 search.php:36
 msgid "Previous"
 msgstr "Предыдущая"
 
-#: index.php:20
+#: index.php:37 search.php:37
 msgid "Next"
 msgstr "Следующая"
 
@@ -104,29 +104,29 @@ msgstr "Анкор (текст) кнопки 2"
 msgid "Button 2 URL"
 msgstr "URL (ссылка) кнопки 2"
 
-#: page.php:9 single.php:27
+#: page.php:9 single.php:30
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: single.php:8 templates/content.php:21
+#: single.php:11 templates/content.php:23
 msgid "Off"
 msgstr "Выкл."
 
-#: single.php:22
+#: single.php:21
 msgid "Share on Vkontakte"
 msgstr "Поделиться на Вконтакте"
 
-#: single.php:23
+#: single.php:22
 msgid "Share on Facebook"
 msgstr "Поделиться в Facebook"
 
-#: single.php:24
+#: single.php:23
 msgid "Share on Twitter"
 msgstr "Поделиться в Twitter"
 
-#: single.php:25
-msgid "Share on Google Plus"
-msgstr "Поделиться в Google Plus"
+#: template-fullwidth.php:5
+msgid "Fullwidth"
+msgstr "Во всю ширину"
 
 #: templates/comments.php:9
 msgid "Comments"
@@ -156,10 +156,6 @@ msgstr "Отмена"
 msgid "Post Comment"
 msgstr "Отправить комментарий"
 
-#: templates/content.php:15
-msgid "Continue Reading"
-msgstr "Подробнее"
-
 #: templates/footer.php:7
 msgid "Wordpress Theme by"
 msgstr "Тема Wordpress от"
@@ -171,6 +167,16 @@ msgstr "Поиск по сайту"
 #: templates/searchform.php:4 templates/searchform.php:6
 msgid "Search"
 msgstr "Поиск"
+
+#: yarpp-template-r_bot.php:9
+msgid "Related posts"
+msgstr "Похожие записи"
+
+#~ msgid "Share on Google Plus"
+#~ msgstr "Поделиться в Google Plus"
+
+#~ msgid "Continue Reading"
+#~ msgstr "Подробнее"
 
 #~ msgid "Top"
 #~ msgstr "Наверх"

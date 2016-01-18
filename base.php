@@ -5,9 +5,11 @@
     <main class="main" role="main">
       <?php include r_bot_template_path(); ?>
     </main>
+    <?php if ( r_bot_display_sidebar() ) { ?>
     <aside class="sidebar" role="complementary">
       <?php include r_bot_sidebar_path(); ?>
     </aside>
+    <?php } ?>
   </div>
 </div>
 

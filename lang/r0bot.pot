@@ -31,11 +31,11 @@ msgstr ""
 msgid "Sorry, no results were found."
 msgstr ""
 
-#: index.php:19
+#: index.php:36 search.php:36
 msgid "Previous"
 msgstr ""
 
-#: index.php:20
+#: index.php:37 search.php:37
 msgid "Next"
 msgstr ""
 
@@ -72,11 +72,11 @@ msgstr ""
 msgid "Recent Posts"
 msgstr ""
 
-#: lib/init.php:38
+#: lib/init.php:41
 msgid "Primary Navigation"
 msgstr ""
 
-#: lib/init.php:50
+#: lib/init.php:53
 msgid "Primary"
 msgstr ""
 
@@ -100,28 +100,28 @@ msgstr ""
 msgid "Button 2 URL"
 msgstr ""
 
-#: page.php:9 single.php:27
+#: page.php:9 single.php:30
 msgid "Pages:"
 msgstr ""
 
-#: single.php:8 templates/content.php:21
+#: single.php:11 templates/content.php:23
 msgid "Off"
 msgstr ""
 
-#: single.php:22
+#: single.php:21
 msgid "Share on Vkontakte"
 msgstr ""
 
-#: single.php:23
+#: single.php:22
 msgid "Share on Facebook"
 msgstr ""
 
-#: single.php:24
+#: single.php:23
 msgid "Share on Twitter"
 msgstr ""
 
-#: single.php:25
-msgid "Share on Google Plus"
+#: template-fullwidth.php:5
+msgid "Fullwidth"
 msgstr ""
 
 #: templates/comments.php:9
@@ -152,12 +152,8 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: templates/content.php:15
-msgid "Continue Reading"
-msgstr ""
-
-#: templates/footer.php:6
-msgid "Top"
+#: templates/footer.php:7
+msgid "Wordpress Theme by"
 msgstr ""
 
 #: templates/searchform.php:2
@@ -166,4 +162,8 @@ msgstr ""
 
 #: templates/searchform.php:4 templates/searchform.php:6
 msgid "Search"
+msgstr ""
+
+#: yarpp-template-r_bot.php:9
+msgid "Related posts"
 msgstr ""

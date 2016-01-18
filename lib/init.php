@@ -49,13 +49,13 @@ add_action('init', 'r_bot_register_header_menus');
  */
 
 function r_bot_widgets_init() {
-  register_sidebar([
+  register_sidebar(array(
     'name'          => __('Primary', 'r_bot'),
     'id'            => 'sidebar-primary',
     'before_widget' => '<div class="widget %1$s %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h5 class="title-block">',
     'after_title'   => '</h5>'
-  ]);
+  ));
 }
 add_action('widgets_init', 'r_bot_widgets_init');

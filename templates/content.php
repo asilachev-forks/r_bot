@@ -12,12 +12,14 @@
   </div>
 
   <div class="entry-content">
-    <?php the_content(__('Continue Reading', 'r_bot')); ?>
+    <?php the_content(''); ?>
   </div>
 
   <div class="entry-meta">
     <span class="entry-category"><?php the_category(', '); ?></span>
-    <?php the_tags( '<span class="entry-tags">', ', ', '</span>' ); ?>
+    <?php if ( function_exists('the_views') ) { ?>
+      <span class="views"><i class="fa fa-eye"></i> <?php the_views(); ?></span>
+    <?php } ?>
     <?php comments_popup_link( '0', '1', '%', 'entry-comments', __('Off','r_bot') );?>
   </div>
 

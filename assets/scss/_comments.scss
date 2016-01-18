@@ -1,6 +1,6 @@
 section.comments {
   margin-top: 2rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   border-top: 1px $gray-lighter solid;
   .logged-in-as {
 
@@ -62,7 +62,8 @@ section.comments {
           float: left;
           color: $gray-light;
           a {
-            color: black;
+            color: $gray-dark;
+            font-weight: 600;
             @include hover-focus {
               color: $brand-primary;
             }
