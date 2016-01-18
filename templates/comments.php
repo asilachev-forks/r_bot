@@ -9,7 +9,7 @@ if (post_password_required()) {
     <h5 class="title-block"><?php _e('Comments','r_bot'); ?> <span class="uppercase">(<?php echo get_comments_number();?>)</span></h5>
 
     <ol class="comment-list">
-      <?php wp_list_comments(['style' => 'ol', 'short_ping' => true, 'avatar_size' => 32, 'callback' => 'r_bot_comments']); ?>
+      <?php wp_list_comments(array('style' => 'ol', 'short_ping' => true, 'avatar_size' => 32, 'callback' => 'r_bot_comments')); ?>
     </ol>
 
     <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>

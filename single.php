@@ -27,7 +27,7 @@
         <?php the_tags( '<span class="entry-tags">', ', ', '</span>' ); ?>
       </div>
     </div>
-    <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'r_bot'), 'after' => '</p></nav>']); ?>
+    <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'r_bot'), 'after' => '</p></nav>')); ?>
   </article>
 
   <?php if ( function_exists('related_posts') ) { ?>
