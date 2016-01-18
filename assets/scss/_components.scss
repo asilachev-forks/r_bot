@@ -3,6 +3,8 @@
 }
 
 .entry-meta {
+  font-size: 13px;
+  color: lighten($gray-light, 10%);
   a {
     color: $gray-light;
     @include hover-focus {
@@ -15,12 +17,10 @@
 .entry-date,
 .entry-comments,
 .entry-tags {
-  font-size: 13px;
   &:before {
     font-family: 'FontAwesome';
     display: inline-block;
     margin-right: .25rem;
-    color: lighten($gray-light, 10%);
   }
 }
 
@@ -34,6 +34,10 @@
   &:before {
     content: '\f02b';
   }
+}
+
+.entry-views {
+
 }
 
 .entry-comments {

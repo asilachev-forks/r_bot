@@ -41,9 +41,6 @@ add_action('wp_enqueue_scripts', 'r_bot_assets', 100);
 
 function r_bot_dequeue() {
 
-  wp_dequeue_script('moment.js');
-  wp_dequeue_script('langs.js');
-
   wp_dequeue_style('yarppWidgetCss');
   wp_deregister_style('yarppRelatedCss');
   wp_dequeue_style('yarppRelatedCss');

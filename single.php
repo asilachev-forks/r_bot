@@ -6,7 +6,7 @@
       <div class="entry-meta">
         <time class="entry-date updated" datetime="<?php get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
         <?php if ( function_exists('the_views') ) { ?>
-          <span class="views"><i class="fa fa-eye"></i> <?php the_views(); ?></span>
+          <span class="entry-views"><i class="fa fa-eye"></i> <?php the_views(); ?></span>
         <?php } ?>
         <?php comments_popup_link( '0', '1', '%', 'entry-comments', __('Off','r_bot') );?>
       </div>
