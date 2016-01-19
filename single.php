@@ -30,11 +30,7 @@
     <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'r_bot'), 'after' => '</p></nav>']); ?>
   </article>
 
-  <?php if ( function_exists('related_posts') ) { ?>
-  <div class="related-posts">
-    <?php related_posts(); ?>
-  </div>
-  <?php } ?>
+  <?php if ( function_exists('related_posts') ) { related_posts(); } ?>
 
   <?php comments_template('/templates/comments.php'); ?>
 
