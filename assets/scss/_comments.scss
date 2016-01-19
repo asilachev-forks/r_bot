@@ -95,6 +95,9 @@ section.comments {
         p {
           margin-bottom: .5rem;
         }
+        & > *:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -137,7 +140,4 @@ section.comments {
 
 .comment-respond {
   margin: 3rem 0;
-  .form-submit {
-    margin-bottom: 0;
-  }
 }

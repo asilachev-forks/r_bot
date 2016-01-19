@@ -5,3 +5,7 @@
   width: 1px;
   overflow: hidden;
 }
+
+textarea, input[type="text"], input[type="submit"], input[type="password"], input[type="email"] {
+  appearance: none;
+}
